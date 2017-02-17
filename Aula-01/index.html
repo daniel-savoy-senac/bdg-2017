@@ -34,14 +34,20 @@
 
 
     <script>
-    function pintar(){
-      var red = ~~(Math.random()*255);
-      var green = ~~(Math.random()*255);
-      var blue = ~~(Math.random()*255);
+    // hsl(240,100%,50%);
+
+    function pintar(evt){
+      var x = evt.x;
+      var y = evt.y;
+      var w = window.innerWidth;
+      var h = window.innerHeight;
+      var red = ~~( x/w *255);
+      var green = 0;
+      var blue = 0;
       document.body.style.background = "rgb("+red+","+green+","+blue+")";
     }
 
-    window.addEventListener("click",pintar);
+    window.addEventListener("mousemove",pintar);
 
 
 
