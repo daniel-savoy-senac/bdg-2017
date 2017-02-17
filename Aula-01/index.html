@@ -34,9 +34,14 @@
 
 
     <script>
+    function pintar(){
       var red = ~~(Math.random()*255);
-      document.body.style.background = "rgb("+red+",255,0)";
+      var green = ~~(Math.random()*255);
+      var blue = ~~(Math.random()*255);
+      document.body.style.background = "rgb("+red+","+green+","+blue+")";
+    }
 
+    window.addEventListener("click",pintar);
 
 
 
