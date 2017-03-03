@@ -1,0 +1,38 @@
+body{
+  background: hsl(200, 10%, 50%);
+}
+
+div{
+  transition: 1s;
+  position: relative;
+  background: hsl(200, 10%, 20%) url("sorriso.png") no-repeat center center;
+  background-size: contain;
+  border: hsl(200, 10%, 80%) 2px solid;
+  border-left-width: 20px;
+  text-align: center;
+  padding: 20px;
+  width: 500px;
+  height: 300px;
+  margin: auto;
+  font-family: Helvetica, Verdana, sans-serif;
+  font-size: 4em;
+  border-radius: 20px;
+  color: hsl(0,0%,100%);
+  box-shadow: hsla(240,0%,0%,0.5) 30px 30px 50px;
+}
+
+div:hover{
+  background-color: hsl(200, 10%, 80%);
+  cursor: pointer;
+  height: 400px;
+  transform: translate(180px) rotate(45deg) scale(0.5);
+}
+
+div:after{
+  content: "...";
+}
+
+div:before{
+  content: "...";
+  color: red;
+}
