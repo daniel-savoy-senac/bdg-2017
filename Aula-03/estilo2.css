@@ -1,6 +1,6 @@
 body *{
   padding: 20px;
-  background: hsla(0,0%,0%,0.2);
+  border: red 2px solid;
 }
 
 main article:nth-child(2){
