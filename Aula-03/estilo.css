@@ -2,3 +2,7 @@ body *{
   padding: 20px;
   border: red 2px solid;
 }
+
+main article:nth-child(2){
+  background: hsl(180,100%,50%);
+}
