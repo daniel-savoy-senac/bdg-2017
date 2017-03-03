@@ -1,0 +1,61 @@
+Introdução ao curso.
+Conceitos: Diferenças entre o design gráfico e digital
+ADO: Exercício
+
+Conceitos: HTML, CSS, Javascript.
+Experimentação em sala.
+ADO: Exercício
+
+Conceitos: Conteúdo e estilo
+Experimentação em sala.
+ADO: Exercício
+
+Conceitos: Posicionando elementos na tela.
+ADO: Trabalho 1 "Composição de Tela".
+ADO: Exercício
+
+Conceitos: Formatação
+ADO: Trabalho 1 "Composição de Tela".
+ADO: Exercício
+
+Conceitos: Transições e animação
+ADO: Trabalho 1 "Composição de Tela"
+
+
+Conceitos: Transições e animação.
+ADO: Trabalho 1 "Composição de Tela".
+
+Conceito: HTML DOM
+Entrega: Trabalho 1
+
+Conceito: Noções de programação
+Devolutiva: Trabalho 1
+ADO: Exercício
+
+Conceito: Interação com eventos
+ADO: Exercício
+
+Conceito: Interação com eventos
+ADO: Exercício
+
+Conceito: Algoritmos para interação
+ADO: Trabalho 2 "Composição Interativa".
+ADO: Exercício
+
+Conceito: Algoritmos para interação
+ADO: Trabalho 2 "Composição Interativa".
+ADO: Exercício
+
+Conceito: Algoritmos para interação
+ADO: Trabalho 2 "Composição Interativa".
+
+Conceito: Multimídia Avançado
+ADO: Trabalho 2 "Composição Interativa".
+
+Conceito: Multimídia Avançado
+ADO: Trabalho 2 "Composição Interativa".
+
+Conceito: Multimídia Avançado
+Entrega: Trabalho 2
+
+Devolutiva do semestre
