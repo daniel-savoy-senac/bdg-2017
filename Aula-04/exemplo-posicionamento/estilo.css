@@ -10,15 +10,20 @@ div{
 #avo{
   width: 500px;
   height: 500px;
+  position: relative;
 }
 
 #pai{
   width: 400px;
   height: 400px;
+  position: absolute;
 }
 
 #filho{
   width: 50px;
   height: 50px;
   background: red;
+  right: 20px;
+  bottom: 20px;
+  position: absolute;
 }
