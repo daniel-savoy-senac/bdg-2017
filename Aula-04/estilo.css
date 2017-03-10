@@ -1,3 +1,7 @@
+div{
+  transition: 1s;
+}
+
 .japao div:first-of-type{
   background: red;
   width: 300px;
