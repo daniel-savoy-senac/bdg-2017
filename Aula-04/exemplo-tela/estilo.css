@@ -1,32 +1,47 @@
-div{
-  background: hsla(240,100%,50%,0.2);
+html,body{
+  margin: 0;
+  padding: 0;
 }
 
-#bisavo{
-  width: 600px;
-  height: 600px;
-}
-
-#avo{
-  width: 500px;
-  height: 500px;
-  position: relative;
-}
-
-#pai{
-  width: 400px;
-  height: 400px;
-  position: absolute;
-}
-
-#filho{
-  background: red;
-  width: 50px;
-  height: 50px;
-  right: 0px;
-  left: 0px;
-  bottom: 0px;
-  top:0px;
+header{
   position: fixed;
-  margin: auto;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 40px;
+  background: hsla(180, 100%,50%,0.3);
+  border: 1px solid hsla(180, 100%,50%,0.7);
+}
+
+main{
+  width: 250px;
+  height: 3000px;
+  background: linear-gradient(hsl(120,100%,60%), hsl(120,100%,100%));
+}
+
+section.popup{
+  position: fixed;
+  background: hsla(180, 100%,50%,0.3);
+  border: 1px solid hsla(180, 100%,50%,0.7);
+  width: 300px;
+  height: 200px;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  margin:auto;
+}
+
+#fechar{
+  background: hsl(0,100%,40%);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 3px;
+  right:3px;
+  color: white;
+}
+
+#fechar::before{
+  content: "X";
 }
