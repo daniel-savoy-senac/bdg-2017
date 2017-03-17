@@ -9,12 +9,20 @@
 article{
   font-family: "Roboto", cursive;
   font-weight: 400;
+  text-align: center;
+  font-size: 20vh;
+  transform: rotate(5deg);
 }
 
 span{
   font-weight: 100;
+  font-style: italic;
+  text-decoration: underline;;
+  line-height: 60px;
+  text-transform: uppercase;
 }
 
 strong,b{
   font-weight: 800;
+  color: hsl(0,100%,40%);
 }
