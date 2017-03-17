@@ -6,12 +6,28 @@
   font-weight: 800;
 }
 
+html, body{
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
 article{
   font-family: "Roboto", cursive;
   font-weight: 400;
   text-align: center;
-  font-size: 20vh;
-  transform: rotate(5deg);
+  font-size: 5vh;
+  transition: 1s linear 0s;
+  position: fixed;
+}
+
+article:first-of-type{
+  transition: 1s cubic-bezier(.64,-1.07,.55,1.89) 0s;
+}
+
+body:hover article{
+  transform: rotate(360deg);
+  color: green;
 }
 
 span{
