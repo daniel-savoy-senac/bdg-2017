@@ -1,4 +1,25 @@
+@keyframes tremilicar{
+  0%{
+    transform: scaleY(0.8);
+  }
+  100%{
+    transform: scaleY(1.1);
+  }
+}
+
 body{
+  transition: 2s;
+}
+
+body.cena1 {
+  background: hsl(210, 100%, 20%);
+}
+
+body.cena2 {
+  background: hsl(330, 100%, 40%);
+}
+
+body.cena3 {
   background: hsl(210, 100%, 70%);
 }
 
@@ -14,10 +35,26 @@ div.grama{
 
 div.sol{
   position: fixed;
-  width: 30px;
-  height: 30px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
-  background: hsl(40, 100% , 80%);
-  top: 20px;
-  right: 100px;
+  background: hsl(40, 100% , 80%) url("sol.jpg") no-repeat center center;
+  background-size: cover;
+  left: 50%;
+  transition: 2s;
+  animation: tremilicar .1s infinite alternate;
+}
+
+.cena1 div.sol{
+  bottom: -70px;
+}
+
+.cena2 div.sol{
+  bottom: 20px;
+}
+
+.cena3 div.sol{
+  bottom: 300px;
+  width: 150px;
+  height: 150px;
 }

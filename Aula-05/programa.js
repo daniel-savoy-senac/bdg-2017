@@ -3,7 +3,7 @@ var lista = [
 ];
 var contador = 0;
 
-function mudarBandeira(){
+function mudar(){
   document.body.className = lista[contador];
   if(contador < lista.length-1){
     contador = contador + 1;
@@ -12,4 +12,5 @@ function mudarBandeira(){
   }
 }
 
-window.addEventListener("click", mudarBandeira);
+window.addEventListener("click", mudar);
+mudar();
