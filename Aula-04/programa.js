@@ -1,5 +1,6 @@
 var lista = [
-  "cena1","cena2","cena3"
+  "japao",
+  "franca"
 ];
 var contador = 0;
 
