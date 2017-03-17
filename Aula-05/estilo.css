@@ -1,0 +1,23 @@
+body{
+  background: hsl(210, 100%, 70%);
+}
+
+div.grama{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 20px;
+  background: hsl(120, 100%,30%);
+}
+
+
+div.sol{
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: hsl(40, 100% , 80%);
+  top: 20px;
+  right: 100px;
+}
