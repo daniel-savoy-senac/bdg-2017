@@ -20,3 +20,6 @@ alef - django livre
 nathan - dr. estranho
 ricardo r. - fargo
 alexander - 12 macacos
+natalia r. - pequena sereia
+gabriel - toy story
+erica - a viagem de chihiro
