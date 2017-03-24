@@ -2,9 +2,29 @@
   0%{
     left: 0px;
   }
+  50%{
+    left: 0px;
+    top: 300px;
+    background: green;
+  }
   100%{
     left: 500px;
   }
+}
+
+@keyframes rodar{
+  0%{
+    transform:rotate(0deg);
+  }
+  100%{
+    transform: scale(0.5) translate(200px) rotate(40deg);
+  }
+}
+
+html, body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 div{
@@ -16,11 +36,15 @@ div{
 div:nth-of-type(1){
   background: red;
   top: 10px;
-  animation: andar 2s 2s;
+  animation: andar 2s 2s forwards;
+}
+
+body:hover div:nth-of-type(1){
+  animation: andar 2s 2s forwards infinite alternate;
 }
 
 div:nth-of-type(2){
   background: blue;
   top: 250px;
-  animation: andar 4s;
+  animation:  rodar 1s linear infinite alternate;
 }
