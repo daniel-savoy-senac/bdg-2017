@@ -1,1 +1,67 @@
-.chao
+div{
+  position: fixed;
+}
+
+.chao{
+  bottom: 0;
+  height: 30px;
+  left: 0;
+  right: 0;
+  background: green;
+}
+
+.obstaculo{
+  background: black;
+  height: 100px;
+  width: 100px;
+  bottom: 30px;
+  left: 500px;
+}
+
+@keyframes andar{
+  0%{
+    left: 200px;
+  }
+  100%{
+    left: 800px;
+  }
+}
+
+@keyframes pular{
+  0%{
+    bottom: 30px;
+    transform: rotate(0deg);
+  }
+  50%{
+    bottom: 180px;
+  }
+  100%{
+    bottom: 30px;
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes achatar{
+  0%{
+    height: 100px;
+  }
+  50%{
+    height: 60px;
+    width: 60px;
+  }
+  100%{
+    height: 100px;
+  }
+}
+
+.personagem{
+  background: hsl(30, 100%, 60%);
+  height: 100px;
+  width: 40px;
+  bottom: 30px;
+  left: 200px;
+  animation:  andar 2s linear forwards,
+              pular 2s ease-in-out forwards,
+              achatar .2s 2s forwards;
+}
