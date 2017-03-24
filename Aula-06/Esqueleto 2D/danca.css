@@ -1,0 +1,12 @@
+@keyframes giro{
+  0%{
+    transform: rotate(-30deg);
+  }
+  100%{
+    transform: rotate(30deg);
+  }
+}
+
+.tronco{
+  animation: giro 1s infinite alternate;
+}
