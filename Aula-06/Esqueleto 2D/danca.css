@@ -7,6 +7,67 @@
   }
 }
 
-.tronco{
+@keyframes pulo{
+  0%{
+    transform: translateY(-30px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+@keyframes reverso{
+  0%{
+    transform: rotate(30deg);
+  }
+  100%{
+    transform: rotate(-30deg);
+  }
+}
+
+@keyframes posgiro{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(-60deg);
+  }
+}
+
+@keyframes posreverso{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(60deg);
+  }
+}
+
+.tronco,
+.ombro{
   animation: giro 1s infinite alternate;
+}
+
+.perna.dir{
+  animation: posgiro .3s infinite alternate;
+}
+
+.perna.esq{
+  animation: posreverso .3s infinite alternate;
+}
+
+.cotovelo{
+  animation: reverso .3s linear infinite alternate;
+}
+
+.joelho.dir{
+  animation: posreverso .3s infinite alternate;
+}
+
+.joelho.esq{
+  animation: posgiro .3s infinite alternate;
+}
+
+.raiz{
+  animation: pulo .3s infinite alternate;
 }
