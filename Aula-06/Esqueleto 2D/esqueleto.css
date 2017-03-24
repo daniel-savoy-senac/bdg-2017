@@ -1,0 +1,200 @@
+html, body{
+	margin: 0; 
+	padding: 0; 
+	height: 100%;
+	background: linear-gradient( hsl(200,100%,10%), hsl(200,30%,60%));
+}
+
+.bones{
+	position: fixed;
+	width: 0px;
+	height: 0px;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+	transform: scale(0.8);
+}
+
+section{
+	position: absolute;
+	transition: transform 0.3s;
+	width: 0px;
+	height: 0px;
+	outline: 5px solid red;
+	
+}
+
+.raiz{
+	margin-top: 50%;
+	margin-left: 50%;
+}
+
+
+/* JUNTAS */
+.tronco{
+	top: -5px;
+}
+
+.pescoco{
+	top: -185px;
+}
+
+.ombro.dir{
+	top: -170px;
+	left: 75px;
+}
+
+.cotovelo.dir{
+	left: 120px;
+}
+
+.pulso.dir{
+	left: 100px;
+}
+
+.ombro.esq{
+	top: -170px;
+	right: 75px;
+}
+
+.cotovelo.esq{
+	right: 120px;
+}
+
+.pulso.esq{
+	right: 100px;
+}
+
+.bacia{
+	top: 5px;
+}
+
+.perna.dir{
+	left: 40px;
+	top: 30px;
+}
+
+.perna.esq{
+	right: 40px;
+	top: 30px;
+}
+
+.joelho{
+	top: 160px;
+}
+
+.pe{
+	top: 120px;
+}
+
+
+/* SKIN */
+section>div{
+	background: hsla(120,0%,100%,0.3);
+	position: absolute;
+	transition: background .2s;
+	box-shadow: 2px 5px 5px 0 hsla(180,60%,20%,0.5);
+}
+
+section>div:hover{
+	cursor: pointer;
+	background: hsla(180,60%,100%,0.7);
+}
+
+.tronco>div{
+	width: 120px;
+	height: 180px;
+	transform: translate(-50%,-100%);
+}
+
+.pescoco>div{
+	width: 70px;
+	height: 70px;
+	transform: translate(-50%,-110%);
+}
+
+.ombro>div{
+	width: 120px;
+	height: 30px;
+}
+
+.ombro.dir>div{
+	transform: translate(0%,-50%);
+}
+
+.ombro.esq>div{
+	transform: translate(-100%,-50%);
+}
+
+.cotovelo>div{
+	width: 100px;
+	height: 25px;
+}
+
+.cotovelo.dir>div{
+	transform: translate(0%,-50%);
+}
+
+.cotovelo.esq>div{
+	transform: translate(-100%,-50%);
+}
+
+.pulso>div{
+	width: 40px;
+	height: 40px;
+}
+
+.pulso.dir>div{
+	transform: translate(0%,-50%);
+}
+
+.pulso.esq>div{
+	transform: translate(-100%,-50%);
+}
+
+.bacia>div{
+	width: 100px;
+	height: 45px;
+	transform: translate(-50%,0%);
+}
+
+.perna>div{
+	width: 35px;
+	height: 150px;
+}
+
+.perna.dir>div{
+	transform: translate(-50%,0%);
+}
+
+.perna.esq>div{
+	transform: translate(-50%,0%);
+}
+
+.joelho>div{
+	width: 30px;
+	height: 120px;
+}
+
+.joelho.dir>div{
+	transform: translate(-50%,0%);
+}
+
+.joelho.esq>div{
+	transform: translate(-50%,0%);
+}
+
+.pe>div{
+	width: 65px;
+	height: 20px;
+}
+
+.pe.dir>div{
+	transform: translate(-10%,-50%);
+}
+
+.pe.esq>div{
+	transform: translate(-90%,-50%);
+}
