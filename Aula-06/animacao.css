@@ -1,0 +1,15 @@
+div{
+  position: fixed;
+  width: 200px;
+  height: 200px;
+}
+
+div:nth-of-type(1){
+  background: red;
+  top: 10px;
+}
+
+div:nth-of-type(1){
+  background: blue;
+  top: 250px;
+}
