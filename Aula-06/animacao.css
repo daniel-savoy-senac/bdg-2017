@@ -1,3 +1,12 @@
+@keyframes andar{
+  0%{
+    left: 0px;
+  }
+  100%{
+    left: 500px;
+  }
+}
+
 div{
   position: fixed;
   width: 200px;
@@ -7,9 +16,11 @@ div{
 div:nth-of-type(1){
   background: red;
   top: 10px;
+  animation: andar 2s 2s;
 }
 
 div:nth-of-type(2){
   background: blue;
   top: 250px;
+  animation: andar 4s;
 }
