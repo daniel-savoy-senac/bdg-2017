@@ -10,8 +10,7 @@ class Particula{
     eu.style.left = this.x + "px";
     eu.style.bottom = this.y + "px";
     var hue = Math.random() * 360;
-    eu.style.background = `hsl(${hue},100%,50%)`;
-    // "hsl("+hue+",100%,50%)"
+    eu.style.background = "hsl("+hue+",100%,50%)";
     document.body.appendChild(eu);
   }
 }

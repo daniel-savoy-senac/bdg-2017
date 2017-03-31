@@ -9,7 +9,7 @@
 }
 
 @keyframes zig{
-  0%{ margin-left: 0px; }
+  0%{ margin-left: -20px; }
   100%{ margin-left: 20px;}
 }
 
