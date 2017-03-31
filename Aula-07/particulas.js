@@ -12,3 +12,9 @@ class Particula{
     document.body.appendChild(eu);
   }
 }
+
+function criar(evt){
+  new Particula(evt.x, evt.y);
+}
+
+window.addEventListener("click",criar);
