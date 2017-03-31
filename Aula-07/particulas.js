@@ -14,7 +14,8 @@ class Particula{
 }
 
 function criar(evt){
-  new Particula(evt.x, evt.y);
+  var y = window.innerHeight - evt.y;
+  new Particula(evt.x, y);
 }
 
 window.addEventListener("click",criar);
