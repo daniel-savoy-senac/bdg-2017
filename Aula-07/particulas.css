@@ -3,6 +3,11 @@
   100%{ opacity:0;}
 }
 
+@keyframes subir{
+  0%{ bottom: 5px; }
+  100%{ bottom: 105px;}
+}
+
 div{
   width: 10px;
   height: 10px;
@@ -10,5 +15,6 @@ div{
   border-radius: 50%;
   background: black;
   bottom: 5px;
-  animation: sumir 1s forwards;
+  animation:  sumir 1s forwards,
+              subir 1s linear forwards;
 }
