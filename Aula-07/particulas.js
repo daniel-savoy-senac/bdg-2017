@@ -9,6 +9,7 @@ class Particula{
     var eu = document.createElement("div");
     eu.style.left = this.x + "px";
     eu.style.bottom = this.y + "px";
+    eu.style.width = (Math.random() * 100 + 10) +"px";
     document.body.appendChild(eu);
   }
 }
