@@ -1,3 +1,5 @@
+var T = 0;
+
 class Particula{
   constructor(x,y){
     this.x = x;
@@ -9,8 +11,10 @@ class Particula{
     var eu = document.createElement("div");
     eu.style.left = this.x + "px";
     eu.style.bottom = this.y + "px";
-    var hue = Math.random() * 360;
-    eu.style.background = "hsl("+hue+",100%,50%)";
+    //var hue = Math.random() * 360;
+    //var hue = this.x/window.innerWidth * 360;
+    var hue = ++T % 360;
+    eu.style.backgroundColor = "hsl("+hue+",100%,50%)";
     document.body.appendChild(eu);
   }
 }
