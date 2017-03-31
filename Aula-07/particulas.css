@@ -13,6 +13,16 @@
   100%{ margin-left: 20px;}
 }
 
+@keyframes espiral{
+  0%{transform: rotate(0deg) translate(0px);}
+  100%{transform: rotate(720deg) translate(500px);}
+}
+
+body{
+  transition: 1s;
+  background: white;
+}
+
 div{
   width: 10px;
   height: 10px;
@@ -22,4 +32,14 @@ div{
   animation:  sumir 1s forwards,
               subir 1s linear forwards,
               zig 0.25s infinite alternate;
+  transition: 1s;
+}
+
+@media (orientation : portrait){
+  body{
+    background: black;
+  }
+  div{
+    animation: espiral 2s infinite alternate;
+  }
 }
