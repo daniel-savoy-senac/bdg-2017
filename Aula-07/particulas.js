@@ -18,4 +18,4 @@ function criar(evt){
   new Particula(evt.x, y);
 }
 
-window.addEventListener("click",criar);
+window.addEventListener("mousemove",criar);
