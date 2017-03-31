@@ -4,13 +4,13 @@
 }
 
 @keyframes subir{
-  0%{ bottom: 5px; }
-  100%{ bottom: 105px;}
+  0%{ margin-bottom: 0px; }
+  100%{ margin-bottom: 100px;}
 }
 
 @keyframes zig{
-  0%{ left: 0px; }
-  100%{ left: 20px;}
+  0%{ margin-left: 0px; }
+  100%{ margin-left: 20px;}
 }
 
 div{
@@ -19,8 +19,17 @@ div{
   position: fixed;
   border-radius: 50%;
   background: black;
-  bottom: 5px;
   animation:  sumir 1s forwards,
               subir 1s linear forwards,
               zig 0.25s infinite alternate;
+}
+
+div:nth-of-type(1){
+  bottom: 5px;
+  left: 100px;
+}
+
+div:nth-of-type(2){
+  bottom: 5px;
+  left: 200px;
 }
