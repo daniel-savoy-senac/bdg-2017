@@ -5,7 +5,7 @@ class Particula{
     this.desenhar();
   }
 
-  desenhar = function(){
+  this.desenhar = function(){
     var eu = document.createElement("div");
     eu.style.left = this.x + "px";
     eu.style.bottom = this.y + "px";
