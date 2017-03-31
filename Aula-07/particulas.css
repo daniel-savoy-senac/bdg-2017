@@ -8,6 +8,11 @@
   100%{ bottom: 105px;}
 }
 
+@keyframes zig{
+  0%{ left: 0px; }
+  100%{ left: 20px;}
+}
+
 div{
   width: 10px;
   height: 10px;
@@ -16,5 +21,6 @@ div{
   background: black;
   bottom: 5px;
   animation:  sumir 1s forwards,
-              subir 1s linear forwards;
+              subir 1s linear forwards,
+              zig 0.25s infinite alternate;
 }
