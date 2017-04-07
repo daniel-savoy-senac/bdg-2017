@@ -1,3 +1,8 @@
 svg{
   background: #ccc;
 }
+
+polygon{
+  fill: #fdd;
+  stroke: #00f;
+}
