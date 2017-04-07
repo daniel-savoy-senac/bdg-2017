@@ -1,33 +1,32 @@
-var poly, atual;
+var points = [];
+var poly;
+
+function mover(p){
+  p[0] += Math.random()*4-2;
+  p[1] += Math.random()*4-2;
+}
+
+function animar(){
+  points.forEach(p => mover(p));
+  salvar();
+  window.requestAnimationFrame(animar);
+}
+
+function mudar(evt){
+  var novo = [evt.x, evt.y];
+  points.push(novo);
+  salvar();
+}
+
+function salvar(){
+  var txt = points.map(p => p.join(",")).join(" ");
+  poly.setAttribute("points", txt);
+}
 
 function iniciar(){
   poly = document.querySelector("polyline");
   window.addEventListener("mousemove", mudar);
   animar();
-}
-
-function mudar(evt){
-  var x = evt.x;
-  var y = evt.y;
-  var txt = x+","+y;
-  atual = poly.getAttribute("points");
-  atual = atual ? atual.split(" ") : [];
-  atual.push(txt);
-  atual = atual.join(" ");
-  poly.setAttribute("points", atual);
-}
-
-function animar(){
-  atual = poly.getAttribute("points");
-  if(!atual) return window.requestAnimationFrame(animar);;
-  var points = atual
-    .split(" ")
-    .map(a=>a.split(",")
-      .map(b=>Number(b)+Math.random()*4-2)
-      .join(",")
-    ).join(" ");
-  poly.setAttribute("points", points);
-  window.requestAnimationFrame(animar);
 }
 
 window.addEventListener("load", iniciar);
