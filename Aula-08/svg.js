@@ -1,5 +1,5 @@
 function mudar(evt){
-  var poly = document.querySelector("polygon");
+  var poly = document.querySelector("polyline");
   var x = evt.x;
   var y = evt.y;
   var txt = x+","+y;

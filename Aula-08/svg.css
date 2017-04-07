@@ -2,7 +2,7 @@ svg{
   background: #ccc;
 }
 
-polygon{
-  fill: #fdd;
+polyline{
+  fill: transparent;
   stroke: #00f;
 }
