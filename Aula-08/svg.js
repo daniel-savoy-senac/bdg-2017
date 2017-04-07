@@ -2,8 +2,8 @@ var points = [];
 var poly;
 
 function mover(p){
-  p[0] += Math.random()*4-2;
-  p[1] += Math.random()*4-2;
+  p[0] += Math.random()*2-1;
+  p[1] += Math.random()*2-1;
 }
 
 function animar(){
