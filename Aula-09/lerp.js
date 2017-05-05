@@ -10,7 +10,7 @@ function animar(e){
   // movendo de (10,200) até (400,100)
   let px = lerp(10,400,t);
   let py = lerp(200,100,t);
-  console.log(`X:${px}, Y${px}`);
+  console.log(`X:${px}, Y:${py}`);
 }
 
 function lerp(a,b,t){
