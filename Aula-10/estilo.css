@@ -1,0 +1,6 @@
+div{
+  position: fixed;
+  background: hsl(0, 100%, 50%);
+  width: 200px;
+  height: 200px;
+}
