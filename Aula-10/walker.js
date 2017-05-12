@@ -1,46 +1,50 @@
-var t = 0;
-var bloco1, bloco2;
+var bebado;
+var pos = {x:0,y:0};
+var angulo = 135;
 
-function iniciar(){
-  bloco1 = document.querySelector("#bloco1");
-  bloco2 = document.querySelector("#bloco2");
+function inicio(){
+  bebado = document.querySelector("#bebado");
+  animar();
 }
 
-function tempo(x,y){
-  let w = window.innerWidth;
-  return x/w;
+function rad(degree){
+  return (degree/180)*Math.PI;
 }
 
-function cena(i,f,t){
-  let delta = f - i;
-  let t2 = (t - i) / delta;
-  return clamp(t2);
+function deg(radian){
+  return (radian*180)/Math.PI;
 }
 
-function animar(e){
-  t = tempo(e.x, e.y);
-  // movendo de (10,200) até (400,100)
-  let px = lerp(10,400,t);
-  let py = lerp(200,100,t);
-  let angulo = lerp(0,720,t);
-  bloco1.style.left = px + "px";
-  bloco1.style.top = py + "px";
-  bloco1.style.transform = `rotate(${angulo}deg)`;
-
-  let t2 = cena(.5, .8, t);
-  let cor = lerp(0,100,t2);
-  bloco2.style.background = `hsl(240,100%,${cor}%)`;
+function sorteio(){
+  let chance = 0.02;
+  return (Math.random() < chance);
 }
 
-function lerp(a,b,t){
-  return (1-t) * a + t * b;
+function limites(x,y,t,d,b,e){
+  if(x < e || x >= d) return false;
+  if(y < t || y >= b) return false;
+  return true;
 }
 
-function clamp(t){
-  if(t>1) return 1;
-  if(t<0) return 0;
-  return t;
+function animar(){
+  let direita = window.innerWidth - 200;
+  let baixo = window.innerHeight - 200;
+  let esquerda = 0;
+  let topo = 0;
+
+  let x = pos.x + Math.cos(rad(angulo))*5;
+  let y = pos.y + Math.sin(rad(angulo))*5;
+
+  if(!sorteio() && limites(x,y,topo, direita, baixo, esquerda)){
+    pos.x = x;
+    pos.y = y;
+    bebado.style.left = `${pos.x}px`;
+    bebado.style.top = `${pos.y}px`;
+  } else {
+    angulo = Math.random()*360;
+  }
+  window.requestAnimationFrame(animar);
 }
 
-window.addEventListener("load", iniciar);
-window.addEventListener("mousemove", animar);
+
+window.addEventListener("load",inicio);
