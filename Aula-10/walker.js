@@ -1,10 +1,16 @@
 var bebado;
 var pos = {x:0,y:0};
 var angulo = 135;
+var objetivo = {x:500, y: 500};
 
 function inicio(){
   bebado = document.querySelector("#bebado");
   animar();
+}
+
+function alvo(evt){
+  objetivo.x = evt.x;
+  objetivo.y = evt.y;
 }
 
 function rad(degree){
@@ -32,6 +38,22 @@ function animar(){
   let esquerda = 0;
   let topo = 0;
 
+  let vet = { x: (objetivo.x - pos.x) ,
+              y: (objetivo.y - pos.y)};
+
+  angulo = Math.atan2(vet.y,vet.x);
+
+  let x = pos.x + Math.cos(angulo)*5;
+  let y = pos.y + Math.sin(angulo)*5;
+
+  pos.x = x;
+  pos.y = y;
+  bebado.style.left = `${pos.x}px`;
+  bebado.style.top = `${pos.y}px`;
+
+
+  /*
+
   let x = pos.x + Math.cos(rad(angulo))*5;
   let y = pos.y + Math.sin(rad(angulo))*5;
 
@@ -43,8 +65,10 @@ function animar(){
   } else {
     angulo = Math.random()*360;
   }
+  */
+
   window.requestAnimationFrame(animar);
 }
 
-
+window.addEventListener("mousemove",alvo);
 window.addEventListener("load",inicio);
