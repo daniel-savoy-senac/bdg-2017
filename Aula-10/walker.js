@@ -53,7 +53,7 @@ function vagar(){
   }
 
 
-  window.requestAnimationFrame(animar);
+  window.requestAnimationFrame(vagar);
 }
 
 function seguir(){
@@ -74,7 +74,7 @@ function seguir(){
   pos.y = y;
   bebado.style.left = `${pos.x}px`;
   bebado.style.top = `${pos.y}px`;
-  window.requestAnimationFrame(animar);
+  window.requestAnimationFrame(seguir);
 }
 
 window.addEventListener("mousemove",alvo);
