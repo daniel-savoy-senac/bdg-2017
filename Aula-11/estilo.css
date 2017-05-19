@@ -1,0 +1,12 @@
+div{
+  position: fixed;
+  background: hsl(0, 100%, 50%);
+  width: 200px;
+  height: 200px;
+}
+
+#rolagem{
+  position: absolute;
+  width: .5px;
+  height: 10000px;
+}
