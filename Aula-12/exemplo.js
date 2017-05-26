@@ -1,9 +1,13 @@
 var t = 0;
-var bloco1, bloco2;
+var bloco1, bloco2, btn1, btn2;
 
 function iniciar(){
   bloco1 = document.querySelector("#bloco1");
   bloco2 = document.querySelector("#bloco2");
+  btn1 = document.querySelector("button:nth-of-type(1)");
+  btn2 = document.querySelector("button:nth-of-type(2)");
+  btn1.addEventListener("click", ()=>rolar(2000));
+  btn2.addEventListener("click", ()=>rolar(0));
 }
 
 function animar(){

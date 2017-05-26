@@ -10,3 +10,17 @@ div{
   width: .5px;
   height: 10000px;
 }
+
+button{
+  position: fixed;
+  z-index: 100;
+  top: 10px;
+}
+
+button:nth-of-type(1){
+  left: 10px;
+}
+
+button:nth-of-type(2){
+  left: 50px;
+}
